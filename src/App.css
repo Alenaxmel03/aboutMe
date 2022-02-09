@@ -1,0 +1,26 @@
+.app-wrapper {
+  background: url(https://орфографика.рф/800/600/https/design-plaza.ru/images/products/9296/spradling-polaris-midnight-vinilovoe-pokritie/polaris-midnight-pol-1621-2-_1.jpg);
+  min-height: 100%;
+  display: grid;
+  grid-template: minmax(100px, auto) 1fr minmax(70px, auto) / 1fr;
+  grid-template-areas:
+    "h"
+    "m"
+    "f";
+}
+.app-wrapper-content {
+  background-color: #edeff0;
+  margin-left: 20px;
+}
+.main {
+  grid-area: m;
+  display: grid;
+  grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+}
+
+@media (max-width: 767px) {
+  .app-wrapper-content {
+    grid-column: 2/4;
+    margin-left: 0px;
+  }
+}

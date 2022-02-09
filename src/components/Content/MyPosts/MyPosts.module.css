@@ -1,0 +1,143 @@
+.Posts{
+    border: 3px solid rgb(199, 199, 199);
+    margin: 10px;
+    
+}
+.blockSend {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blockSend_input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.blockSend_input input {
+  display: block;
+  padding: 5px;
+  background-color: #fff;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+}
+.iconInput {
+  font-size: 60px;
+  margin: 10px;
+  color: #dddddd;
+}
+
+.blockSend_input input:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.blockSend_button {
+  display: flex;
+  justify-content: end;
+  margin: 10px;
+}
+.btn {
+  border: none;
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: 500;
+  background: #EDEFF0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.btn:hover {
+  color: #000;
+}
+
+.firstPost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.imgPost {
+    position: relative;
+    width: 1040px;
+    padding: 0px 0px 40% 0px;
+    margin: 20px 20px 10px 20px;
+}
+.imgPost img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.blockPost {
+    width: 94%;
+    display: flex;
+    margin: 0px 20px 20px 20px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid rgb(192, 192, 192);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 22px;
+  }
+  .myPost {
+    margin-left: 20px;
+  }
+  .myPost p {
+    font-size: 16px !important;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .myImage {
+    width: 60px;
+    height: 60px;
+  }
+  .myImage img {
+    margin-right: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .blockComment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 20px;
+  }
+  .blockComment input{
+    display: block;
+    padding: 5px;
+    background-color: #fff;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+}
+
+  .iconComment{
+    font-size: 60px;
+    margin: 10px;
+    color: #dddddd;
+  }
+
+  .blockComment input:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
