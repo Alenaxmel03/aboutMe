@@ -1,5 +1,4 @@
 import React from "react";
-// import s from "./ContentInfo.module.css";
 
 class ContentStatus extends React.Component {
   state = {
@@ -24,11 +23,11 @@ class ContentStatus extends React.Component {
     });
   };
 
-  componentDidUpdate (prevProps, prevState) {
-    if(prevProps.status !== this.props.status) {
+  componentDidUpdate(prevProps, prevState) {
+    if (prevProps.status !== this.props.status) {
       this.setState({
-        status: this.props.status
-      })
+        status: this.props.status,
+      });
     }
   }
   render() {

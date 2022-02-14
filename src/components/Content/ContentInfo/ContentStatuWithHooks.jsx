@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import s from "./ContentInfo.module.css";
+import s from "./ContentInfo.module.css";
 
 const ContentStatusWithHooks = (props) => {
   // let stateWithSetState = useState(false); 
@@ -27,9 +27,9 @@ const ContentStatusWithHooks = (props) => {
 
 
   return (
-    <div>
+    <div  className={s.status_block}>
       {!editMode && (
-        <div>
+        <div className={s.status}> 
           <span onDoubleClick={activateEditMode}>
             {props.status || "-----"}
           </span>
@@ -44,6 +44,7 @@ const ContentStatusWithHooks = (props) => {
           />
         </div>
       )}
+      <div className={s.statusChange}>&#40; if you want to change status, then click on it &#41;</div>
     </div>
   );
 };

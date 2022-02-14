@@ -11,9 +11,9 @@
 }
 
 .block__img {
-  width: 100px;
-  height: 100px;
-  margin: 10px;
+  width: 80px;
+  height: 80px;
+  /* margin: 10px; */
 }
 .post img {
   width: 100%;
@@ -21,8 +21,8 @@
   object-fit: cover;
 }
 .infoText {
-  height: 98px;
-  margin: 0px 10px 10px 10px;
+  /* height: 98px; */
+  margin: 0px 10px 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -40,9 +40,9 @@
 }
 
 .mes {
-  font-size: 20px;
+  font-size: 16px;
 }
-.like span {
+/* .like span {
   display: inline-block;
   border-radius: 5px;
 }
@@ -52,9 +52,9 @@
   border: 1px solid #adadad;
   display: flex;
   justify-content: space-around;
-  padding: 5px;
+  padding: 5px; */
   /* border-radius: 7px; */
-  background-color: #b1b6b9;
+  /* background-color: #b1b6b9;
   color: #fff;
   font-size: 16px;
   margin-left: 5px;
@@ -64,4 +64,4 @@
 }
 .like:hover {
   background-color: #24699b;
-}
+} */

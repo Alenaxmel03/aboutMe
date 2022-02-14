@@ -63,8 +63,6 @@
   object-fit: cover;
 }
 
-
-
 .home_block_info {
   margin: 10px 10px 10px 0px;
   color: #cbcccc;
@@ -79,11 +77,7 @@
   color: #808080;
 }
 
-
-
-
 .home_block_text {
- 
   margin: 10px 10px 10px 0px;
   color: #cbcccc;
 }
@@ -93,10 +87,9 @@
 .block_text__data {
 }
 
-.block_text__map  span,
-.block_text__data span{
- display: inline-block;
- margin-right: 9px;
- color: #ED1A3B;
+.block_text__map span,
+.block_text__data span {
+  display: inline-block;
+  margin-right: 9px;
+  color: #ed1a3b;
 }
-

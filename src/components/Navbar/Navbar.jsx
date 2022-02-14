@@ -25,8 +25,6 @@ const HomeBlock = (props) => {
 const Navbar = () => {
     return(
     <nav className={s.nav}>
-      <HomeBlock  src="https://i.pinimg.com/564x/38/1b/06/381b0623eda223138f89bf2c4b312076.jpg" name="Mark Smith" email="@mark_photo" country="Netherlands" joined="Joined July 2017"/>
-
       <div className={s.item}>
         <NavLink className={s.item__link} className = { navData => navData.isActive ? s.active : s.item__link } to="/profile"><span className={s.icon}><i class="fas fa-id-card"></i></span>Profile</NavLink>
       </div>
@@ -43,12 +41,7 @@ const Navbar = () => {
         <NavLink  className={s.item__link} className = { navData => navData.isActive ? s.active : s.item__link } to="/photos"> <span className={s.icon}> <i class="far fa-images"></i></span>Photos</NavLink>
       </div>
       <div className={s.item} >
-        <NavLink  className={s.item__link} className = { navData => navData.isActive ? s.active : s.item__link } to="/settings"> <span className={s.icon}><i class="fas fa-user-cog"></i></span>Settings</NavLink>
-      </div>
-      <div className={s.item } >
-        <NavLink  className={s.item__link} className = { navData => navData.isActive ? s.active : s.item__link } to="/friends"> <span className={s.icon}><i class="fas fa-users"></i></span>Friends</NavLink>
-      </div>
-      
+      </div> 
 </nav>
     )
 }

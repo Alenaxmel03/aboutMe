@@ -12,7 +12,7 @@ const Dialogs = (props) => {
   ));
 
   let messagesElements = state.messagesData.map((m) => (
-    <Message message={m.message} key={m.id} />
+    <Message message={m.message} key={m.id} img={m.img} name={m.name} time={m.time}/>
   ));
 
   let newMessagesBody = state.newMessagBody;
@@ -31,17 +31,17 @@ const Dialogs = (props) => {
     <div className={s.dialogs}>
       <div className={s.users_items}>{dialogsElements}</div>
       <div className={s.messages_items}>
-        <div>{messagesElements}</div>
+        <div  className={s.mes}>{messagesElements}</div>
         <div>
-          <div>
+          <div className={s.input}>
             <input
               value={newMessagesBody}
               onChange={onNewMessageChange}
-              placeholder="Enter your message"
+              placeholder="Enter your message..."
             ></input>
           </div>
           <div>
-            <button onClick={onSendMessageClick}>Send</button>
+            <button  className={s.btn} onClick={onSendMessageClick}>Send</button>
           </div>
         </div>
       </div>

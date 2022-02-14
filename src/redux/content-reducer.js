@@ -9,7 +9,7 @@ let initialState = {
   postData: [
     {
       id: 1,
-      message: "Nice photo, take more pictures ... you are a real talent!",
+      message: "Nice photo, take more pictures !",
       like: 14,
       name: "Bob",
       img: "https://i.guim.co.uk/img/media/791c139fcb94e1094512b045e939a8ca9dceec75/0_635_4712_4706/master/4712.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=850d0cffdfb9434bcea77373896f7d40",
@@ -23,7 +23,7 @@ let initialState = {
     },
     {
       id: 3,
-      message: "I want to learn how to photograph, teach me",
+      message: "I want to learn how to photograph",
       like: 55,
       name: "Edvard",
       img: "https://thumbs.dreamstime.com/b/portrait-young-man-sad-face-expression-gray-background-88854700.jpg",
@@ -47,13 +47,15 @@ const contentReducer = (state = initialState, action) => {
     case ADD_POST: {
       let newPost = {
         id: 5,
+        name: "Mike",
         message: state.newPostText,
-        like: 0,
+        img: "https://jooinn.com/images/man-31.jpg"
       };
       return {
         ...state,
         postData: [...state.postData, newPost],
         newPostText: "",
+        
       };
     }
     case UP_DATE_NEW_POST_TEXT: {

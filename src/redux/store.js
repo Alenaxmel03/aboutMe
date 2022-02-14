@@ -62,9 +62,9 @@ let store = {
         },
       ],
       messagesData: [
-        { id: 1, message: "Hi!" },
-        { id: 2, message: "How  are you?" },
-        { id: 3, message: "Sorry? I am late..." },
+        { id: 1, message: "Hi!", img:"https://qodebrisbane.com/wp-content/uploads/2019/07/This-is-not-a-person-2-1.jpeg" },
+        { id: 2, message: "How  are you?", img:"https://qodebrisbane.com/wp-content/uploads/2019/07/This-is-not-a-person-2-1.jpeg"},
+        { id: 3, message: "Sorry? I am late...", img:"https://qodebrisbane.com/wp-content/uploads/2019/07/This-is-not-a-person-2-1.jpeg" },
       ],
        newMessagBody: ""
     },
